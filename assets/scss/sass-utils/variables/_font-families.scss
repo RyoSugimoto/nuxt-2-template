@@ -1,0 +1,22 @@
+$font-families: (
+  sans-serif: ("Helvetica Neue", Helvetica, Arial, sans-serif),
+  serif: ("Times New Roman", serif),
+  monospace: (Monaco, "Courier New", Courier, monospace),
+  mincho: (YuMincho, "Yu Mincho", serif),
+  gothic: (YuGothic, "Yu Gothic", sans-serif),
+) !default;
+
+@font-face {
+	font-family: 'MyYuGothicM';
+	font-weight: normal;
+	src: local('YuGothic-Medium'),
+	local('Yu Gothic Medium'),
+	local('YuGothic-Regular');
+}
+
+@font-face {
+	font-family: 'MyYuGothicM';
+	font-weight: bold;
+	src: local('YuGothic-Bold'),
+	local('Yu Gothic');
+}

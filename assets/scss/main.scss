@@ -1,0 +1,76 @@
+@use "./sass-utils/_all" as *;
+
+/**
+ * Global Styles
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+/**
+ * Reset
+ */
+
+body {
+  position: relative;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+button {
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+form,
+input,
+select,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/**
+ * Basic styles and custom props
+ */
+
+:root {
+  overflow-y: scroll;
+
+  font-family: get-font-family(gothic);
+  font-size: rem(get-font-size(rg));
+  line-height: get-line-height(md);
+
+  --link-color: #09c;
+
+  // Layouts
+  --page-transition-duration: .75s;
+
+  // Drawer
+  --drawer-bg-color: #999;
+  --drawer-color: #ccc;
+  --drawer-transition-duration: .5s;
+  --drawer-switch-transition-duration: .5s;
+
+  // PageHeader
+  --page-header-bg-color: transparent;
+  --page-header-color: inherit;
+}
+
+a {
+  color: var(--link-color, #09c);
+}

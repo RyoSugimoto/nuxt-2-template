@@ -1,0 +1,5 @@
+@use '../variables/_all' as variable;
+
+@function get-line-height($line-height-name) {
+  @return map-get(variable.$line-heights, $line-height-name);
+}

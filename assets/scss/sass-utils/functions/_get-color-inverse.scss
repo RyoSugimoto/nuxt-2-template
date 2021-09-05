@@ -1,0 +1,5 @@
+@use '../variables/_all' as variable;
+
+@function get-color-inverse($color-name) {
+  @return map-get(variable.$colors-inverse, $color-name);
+}

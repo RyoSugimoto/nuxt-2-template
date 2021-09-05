@@ -1,0 +1,5 @@
+@use '../variables/_all' as variable;
+
+@function get-font-size($font-size-name) {
+  @return map-get(variable.$font-sizes, $font-size-name);
+}

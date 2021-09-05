@@ -1,0 +1,9 @@
+@use '../functions/_all' as *;
+
+@mixin clearfix($position: after) {
+  &::#{position} {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}

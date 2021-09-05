@@ -1,0 +1,5 @@
+@use '../variables/_all' as variable;
+
+@function get-gradient($gradient-name) {
+  @return map-get(variable.$gradients, $gradient-name);
+}

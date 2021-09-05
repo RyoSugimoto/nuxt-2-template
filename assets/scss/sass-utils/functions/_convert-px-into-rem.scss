@@ -1,0 +1,13 @@
+@use '../variables/_all' as variable;
+@use 'sass:math';
+
+@function convert-px-into-rem($px, $base: 16px) {
+  @if type-of($px) != 'number' or unitless($px) {
+    @warn "The unit of the argument must be a number and 'px'.";
+    @return $px;
+  }
+  $no-px: math.div($px, ($px * 0 + 1));
+  $no-px-base: math.div($base, ($base * 0 + 1));
+  $value: math.div($no-px, $no-px-base) * 1rem;
+  @return $value;
+}

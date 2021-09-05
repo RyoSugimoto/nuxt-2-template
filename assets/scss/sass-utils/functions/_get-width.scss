@@ -1,0 +1,5 @@
+@use '../variables/_all' as variable;
+
+@function get-width($width-name) {
+  @return map-get(variable.$widths, $width-name);
+}

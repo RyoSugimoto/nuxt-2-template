@@ -1,0 +1,11 @@
+@use '../functions/_all' as *;
+
+@mixin when-vw-under($size-name) {
+  @if (get-width($size-name)) {
+    @media screen and (max-width: get-width($size-name)) {
+      @content;
+    }
+  } @else {
+    @error "The size is not defined.";
+  }
+}

@@ -1,0 +1,5 @@
+@use './convert-px-into-rem' as *;
+
+@function rem($px, $base: 16px) {
+  @return convert-px-into-rem($px, $base: 16px)
+}

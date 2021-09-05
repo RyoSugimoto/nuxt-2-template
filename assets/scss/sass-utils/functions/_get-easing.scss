@@ -1,0 +1,5 @@
+@use '../variables/_all' as variable;
+
+@function get-easing($easing-name) {
+  @return map-get(variable.$easings, $easing-name);
+}

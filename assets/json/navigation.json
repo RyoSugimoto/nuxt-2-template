@@ -1,0 +1,27 @@
+[
+  {
+    "key": "home",
+    "label": "Home",
+    "href": "/"
+  },
+  {
+    "key": "blog",
+    "label": "Blog",
+    "href": "/blog/"
+  },
+  {
+    "key": "gallery",
+    "label": "Gallery",
+    "href": "/Gallery/"
+  },
+  {
+    "key": "about",
+    "label": "About",
+    "href": "/about/"
+  },
+  {
+    "key": "contact",
+    "label": "Contact",
+    "href": "/contact/"
+  }
+]

@@ -1,0 +1,5 @@
+@use '../variables/_all' as variable;
+
+@function get-font-family($font-name) {
+  @return map-get(variable.$font-families, $font-name);
+}
